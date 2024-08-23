@@ -18,7 +18,7 @@ export function App() {
 
         <div className="relative z-20 p-5 text-white">
           <section className="flex flex-col items-center justify-center text-center h-full ">
-            <img className="h-32 w-32 mt-52" src={Icon} alt="Ícone de perfil" />
+            <img className="h-32 w-32" src={Icon} alt="Ícone de perfil" />
             <p className="mt-4 font-bold">@monica</p>
             <div className="flex flex-col gap-4 my-10">
               <div>
