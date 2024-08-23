@@ -13,7 +13,7 @@ export function App() {
   };
   return (
     <div>
-      <div className="relative w-full h-screen bg-gradient-to-br from-blue-800 via-pink-500 to-pink-700">
+      <div className="relative w-full h-screen bg-gradient-to-br from-blue-800 via-pink-500 to-pink-700 py-4">
         <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
 
         <div className="relative z-20 p-5 text-white">
