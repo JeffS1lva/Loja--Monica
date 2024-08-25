@@ -21,6 +21,16 @@ export function App() {
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(url, "_blank");
   };
+  
+  // Função para enviar mensagem para WhatsApp solicitando agendamento
+  const handleSendMessages = () => {
+    const messageAgendamento = `Olá Monica, estou interessado(a) em marcar meu horário . Gostaria de mais informações!`;
+    const encodedMessages = encodeURIComponent(messageAgendamento);
+    const urls = `https://wa.me/${phoneNumber}?text=${encodedMessages}`;
+    window.open(urls, "_blank");
+  };
+
+
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-800 via-blue-500 to-pink-700">
@@ -34,7 +44,7 @@ export function App() {
         <div className="flex flex-col gap-4 mt-6 w-full">
           <button
             className="p-3 md:p-4 w-full bg-slate-700 rounded-md bg-opacity-20 border border-zinc-800 font-bold hover:bg-opacity-5 hover:border-white"
-            onClick={() => handleSendMessage("Agendamento", "Gratuito")}
+            onClick={() => handleSendMessages()}
           >
             Agende seu horário aqui!
           </button>
